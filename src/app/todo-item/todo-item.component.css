@@ -1,0 +1,24 @@
+.left {
+    margin-left: 150px;
+    width: 80%;
+    margin-top: 15px;
+}
+
+.text {
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    color: #000000;
+}
+
+.text-line {
+    text-decoration: line-through;
+}
+
+.display-text {
+    display: none;
+}
+
+.pad {
+    margin-left: 5px;
+}

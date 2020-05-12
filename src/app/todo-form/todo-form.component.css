@@ -1,0 +1,17 @@
+.left {
+    margin-left: 150px;
+}
+
+div {
+    margin-top: 10px;
+}
+
+.text {
+    font-size: 20px;
+    font-style: normal;
+    color: #000000;
+}
+
+button:disabled {
+    background-color: crimson;
+}

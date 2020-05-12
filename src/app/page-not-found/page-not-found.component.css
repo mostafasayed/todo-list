@@ -1,0 +1,10 @@
+.text {
+    text-align: center;
+}
+
+.main {
+    text-align: center;
+    margin: 50px;
+    font-size: 150px;
+    font-weight: bold;
+}

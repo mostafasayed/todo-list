@@ -1,0 +1,28 @@
+<div class="left text">
+	Here you can track your {{ status }} list
+</div>
+<table class="table table-bordered table-striped left text">
+  <thead>
+    <td>#</td>
+    <td>Description</td>
+    <td>Deadline</td>
+    <td>Status</td>
+    <td>Actions</td>
+  </thead>
+  <tr *ngFor="let todo of current_todo_list" [appTextLine]="todo.done">
+	  <td>{{ current_todo_list.indexOf(todo) + 1 }}</td>
+	  <td>{{ todo.description }}</td>
+	  <td>{{ todo.date }}</td>
+    <td>{{ todo.state }}</td>
+    <td>
+      <button (click)="completeItem(todo.id)" [appDisable]="todo.state" class="btn btn-success pad">
+        <i class="fa fa-check-circle"></i>
+      </button>
+      <button (click)="deleteItem(todo.id)" class="btn btn-danger pad">
+        <i class="fa fa-trash"></i>
+      </button>
+    </td>
+  </tr>
+</table>
+
+

@@ -1,0 +1,45 @@
+<form class="left" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2 text">
+				<label for="description">Description: </label>
+			</div>
+			<div class="col-sm-2">
+				<input style="width: 250px;" type="text" name="description" formControlName="description">
+			</div>
+			<div class="col-sm-8"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2 text">
+				<label for="state">State: </label>
+			</div>
+			<div class="col-sm-2">
+				<select name="state" formControlName="state">
+					<option value="Pending">Pending</option>
+					<option value="Inprogress">In Progress</option>
+					<option value="Completed">Completed</option>
+				</select>
+			</div>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 text">
+				<label for="date">Deadline: </label>
+			</div>
+			<div class="col-sm-2">
+				<input type="date" name="date" formControlName="date">
+			</div>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4 text">
+				<button type="submit" class="btn btn-primary text" [disabled]="!myForm.valid">Submit</button>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+	</div>
+	
+			
+</form>
