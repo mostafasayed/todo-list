@@ -4,9 +4,17 @@ Todo List, Keep you tracking of your todo you can add new task specifying its de
 
 ## Getting Started
 
-Its very sample open your command line write `npm start` to start it, in development server open your browser navigate to `http://localhost:4200/`
+If you want to run it without Docker, Its very sample open your command line write `npm start` to start it, in development server open your browser navigate to `http://localhost:4200/`
 
-##Versioning
+## Build docker image
+
+`docker build -t my-todo-list . `
+
+## Run the container
+
+`docker run -p 4200:80 my-todo-list`
+
+## Versioning
 1.0.0
 
 ## Authors
